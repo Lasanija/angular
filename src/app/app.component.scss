@@ -1,0 +1,23 @@
+*{
+   box-sizing: border-box;
+   margin: 0px;
+}
+.task{
+   padding: 15px;
+   margin-bottom: 10px;
+   background:linear-gradient(90deg, rgba(222,15,20,1) 0%, rgba(241,56,56,1) 44%, rgba(255,255,255,1) 100%);
+   border-radius: 12px;
+   color: white;
+   text-transform: uppercase;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   text-align: center;
+&:hover{
+   background: linear-gradient(90deg, rgba(255,255,255,1) 4%, rgba(241,56,56,1) 44%, rgba(222,15,20,1) 99%);
+}
+}
+.task.done{
+   background:linear-gradient(90deg, rgb(0, 139, 74) 0%, rgb(56, 241, 164) 44%, rgba(255,255,255,1) 100%);
+   &:hover{
+      background: linear-gradient(90deg, rgba(255,255,255,1) 4%, rgb(56, 241, 164) 44%,rgb(0, 139, 74) 99%);
+   }
+}
